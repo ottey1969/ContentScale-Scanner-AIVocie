@@ -1437,7 +1437,7 @@ Key gap: ${pitch}`;
                       </div>
                     </div>
                     <div className="grid gap-4">
-                      {scanResult.recommendations.map((rec: any, i: number) => (
+                      {(scanResult.recommendations || []).map((rec: any, i: number) => (
                         <motion.div 
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
